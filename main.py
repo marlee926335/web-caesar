@@ -8,8 +8,13 @@ form = """
 
 <html>
     <head>
+        <form method="POST"> 
+        <input type="text" name="rot" id="rot">
+        <input type ="textarea"  name="text" id="text">
+        <label for="rot">Rotate by:</label>
+        <input type="submit" value="Submit Query">
         <style>
-            form {
+            form { 
                 background-color: #eee;
                 padding: 20px;
                 margin: 0 auto;
@@ -31,6 +36,6 @@ form = """
 """
 @app.route("/")
 def index():
-    return "HELLO WORLD"
+    return form
 
 app.run()
