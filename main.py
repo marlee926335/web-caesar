@@ -9,9 +9,11 @@ form = """
 <html>
     <head>
         <form method="POST"> 
-        <input type="text" name="rot" id="rot">
-        <input type ="textarea"  name="text" id="text">
         <label for="rot">Rotate by:</label>
+        <input type="text" name="rot" id="rot"><br>
+        <textarea  name="text" id="text" rows="10" cols="60">
+        </textarea>
+        <br>
         <input type="submit" value="Submit Query">
         <style>
             form { 
@@ -22,7 +24,7 @@ form = """
                 font: 16px sans-serif;
                 border-radius: 10px;
             }
-            textarea {
+            textarea { 
                 margin: 10px 0;
                 width: 540px;
                 height: 120px;
